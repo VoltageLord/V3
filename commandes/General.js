@@ -6,7 +6,7 @@ const conf = require("../set");
 
 
 
-zokou({ nomCom: "David", categorie: "General", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "Voltage", categorie: "General", reaction: "💞" }, async (dest, zk, commandeOptions) => {
 
     const { ms , mybotpic } = commandeOptions;
 
@@ -119,7 +119,7 @@ zokou({ nomCom: "dev", categorie: "General", reaction: "💞" }, async (dest, zk
 
 
 
-    let message = "Yowaimo!!!👋 welcome to *Gojou-MD* ! here is the dev :\n\n";
+    let message = "Yowaimo!!!👋 welcome to *V3* ! here is the dev :\n\n";
 
     for (const dev of devs) {
 
