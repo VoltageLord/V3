@@ -32,8 +32,8 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭─────────────────☉
-│▫️╭─────────────☉
+╭─────────────────☉⚡
+│▫️╭─────────────☉⚡
 │  │ *GOJOU-MD*
 │▫️│*BOT-OWNER* : ${s.OWNER_NAME}
 │▫️│*Date* : ${date}
@@ -43,11 +43,11 @@ const date = moment().format('DD/MM/YYYY');
 │▫️│*STORAGE* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │▫️│*RUNNING ON* : ${os.platform()}
 │▫️│*THEME* : *Gojou-MD*
-│▫️╰──────────────☉
-╰──────────────────☉
-╭───────────────☉
- ☉〘 Gojou-MD 〙☉
- ☉by David Cyril☉
+│▫️╰──────────────☉⚡
+╰──────────────────☉⚡
+╭───────────────☉⚡
+ ⚡〘 V3 〙☉
+ ⚡by Voltage ⚡
 ╰───────────────☉\n`;
     
 let menuMsg = `
@@ -55,7 +55,7 @@ let menuMsg = `
     *YOWAIMO*
 ╰─────────☉
 
- *⚡GOJOU-MD COMMAND LIST⚡*
+ *⚡V3 COMMAND LIST⚡*
 `;
 
     for (const cat in coms) {
@@ -71,10 +71,10 @@ let menuMsg = `
     menuMsg += `
             
 *———————————————————————————*
-|▫️Gojou-MD
+|▫️V3
 |▫️a Multi device whatsapp bot
-|▫️Created by _David Cyril_
-|▫️_Repo_ :https://github.com/DeeCeeXxx/Gojou-MD
+|▫️Created by _Voltage Lord_
+|▫️_Repo_ :https://github.com/VoltageLord/V3
 *———————————————————————————*
 `;
 
@@ -82,7 +82,7 @@ let menuMsg = `
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Gojou-MD*, déveloper David Cyril" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *V3*, déveloper VOLTAGE LORD" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -92,7 +92,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Gojou*, déveloper David Cyril" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *V3*, déveloper Voltage Lord" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
